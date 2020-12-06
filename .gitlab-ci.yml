@@ -21,3 +21,6 @@ stages:
   - manifest    # Create manifests for created assets (hashes, manifests, keys, etc.).
   - publish     # Publish created manifests
 # ==============================================================================
+
+include:
+  - local: /.gitlab-ci/alex.yml

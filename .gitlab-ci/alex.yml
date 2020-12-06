@@ -1,0 +1,3 @@
+alex:
+  image: pipelinecomponents/alex:latest
+  script: alex
