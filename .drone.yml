@@ -1,0 +1,3 @@
+kind: pipeline
+name: pipeline-components
+type: docker
