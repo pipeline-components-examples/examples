@@ -1,0 +1,14 @@
+---
+name: Pipeline Component - Alex
+
+on:
+  - pull_request
+  - push
+
+jobs:
+  pipeline-component:
+    name: Alex
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: pipeline-components/alex@master
