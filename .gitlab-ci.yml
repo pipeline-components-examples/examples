@@ -1,0 +1,23 @@
+---
+image: scratch
+
+# ==============================================================================
+# Define available stages
+# ------------------------------------------------------------------------------
+# The ordering of elements in stages defines the ordering of jobs' execution:
+#
+# - Jobs of the same stage run in parallel.
+# - Jobs of the next stage run after the jobs from the previous stage complete successfully.
+#
+#  If a job doesn't specify a stage, the job is assigned the "test" stage.
+# ------------------------------------------------------------------------------
+stages:
+  - preflight   # Things that MUST pass otherwise there is no use in running the pipeline.
+  - quality     # Things that SHOULD pass but do not mean the code is broken.
+  - test        # Things that SHOULD pass and DO mean the code is broken.
+  - build       # Create assets from the working code.
+  - scan        # Scan any created assets for vulnerabilities.
+  - deploy      # Send the assets somewhere.
+  - manifest    # Create manifests for created assets (hashes, manifests, keys, etc.).
+  - publish     # Publish created manifests
+# ==============================================================================
