@@ -1,11 +1,23 @@
 # Pipeline Component Examples
 
-This repository contains examples for all Pipeline Components for 
+_Examples for all Pipeline Components_
+
+> _“Setting a good example is a far better way to spread ideals than
+> through force of arms.”_
+> ~ Ron Paul
+
+
+This repository contains examples for:
 
 - Docker 
 - Github Actions
-- Gitlab CD/CI
+- Gitlab CI
 - Travis
 
-In order to do this, this repository also contains configuration files for each
-tool used and code (or data, or text) files to run tools against.
+In order to do so, this repository also contains configuration, code, data, or
+text files to run tools with.
+
+## Work in progress
+
+Until all examples are complete, an overview of what has already been done is
+available at: <https://hackmd.io/@pipeline-components/examples-worklist>.
